@@ -1,0 +1,37 @@
+Part 1 - Implement the front end UI:
+    ☐ Build from a mobile first approach
+        ☐ Design should be responsive
+    ☐ Focus on the non-logged functionality
+    ☐ Add Logged in functionality as a secondary feature
+    ☐ Most important is the ability to click on a link, go to a new page and then back again
+    ☐ With that core in place then add the CMS elements.
+
+    General:
+        ✔ Get routes up and running once basic structure is in place. @done(18-07-24 17:47)
+        ☐ Mobile Menu should be controlled by swipe gesture or button located at bottom of page
+            ☐ This is a good idea but I'm not sure where to even start with this.
+            ☐ Could just use a basic menu for this project and integrate gestures in the next
+
+    Header:
+        ✔ Get basic structure in place @done(18-07-24 17:48)
+        ☐ Mobile Nav
+            ☐ See Above
+        ☐ Desktop Nav
+            
+
+    Home Page:
+        ✔ Basic skeleton in place @done(18-07-24 17:48)
+        ☐ Used some code from React-Project-2 to get news items displayed on the page
+            ☐ Next stage is formatting
+
+    
+    News Item:
+        ✔ Basic Structure in place @done(18-07-24 17:48)
+        ☐ Style page
+    
+
+Part 2 Implement Database functionality:
+    ☐ Focus on getting a simple form to submit to the database with basic info
+    ☐ No need to rush this, take your time and work through each challenge one by one.
+    ☐ This is possible but you might need to go off and some tuturials / research to 
+    
