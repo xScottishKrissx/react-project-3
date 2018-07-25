@@ -6,7 +6,10 @@ Part 1 - Implement the front end UI:
     ☐ Most important is the ability to click on a link, go to a new page and then back again
     ☐ With that core in place then add the CMS elements.
 
-    General:
+
+    Known Bugs:
+        ☐ If you middle click or try to open a news item in a new tab, you can an error @started(18-07-25 11:58)
+    General Notes:
         ✔ Get routes up and running once basic structure is in place. @done(18-07-24 17:47)
         ☐ Mobile Menu should be controlled by swipe gesture or button located at bottom of page
             ☐ This is a good idea but I'm not sure where to even start with this.
@@ -14,20 +17,26 @@ Part 1 - Implement the front end UI:
 
     Header:
         ✔ Get basic structure in place @done(18-07-24 17:48)
-        ☐ Mobile Nav
-            ☐ See Above
-        ☐ Desktop Nav
+        ☐ Mobile Nav @started(18-07-25 11:08)
+            ☐ See Above @started(18-07-25 11:08)
+        ☐ Desktop Nav @started(18-07-25 11:08)
             
 
     Home Page:
         ✔ Basic skeleton in place @done(18-07-24 17:48)
-        ☐ Used some code from React-Project-2 to get news items displayed on the page
-            ☐ Next stage is formatting
+        ☐ Used some code from React-Project-2 to get news items displayed on the page @started(18-07-25 11:08)
+            ☐ Next stage is formatting @started(18-07-25 11:08)
+        ✔ Seperate News Item Look into its own component @started(18-07-25 11:08) @done(18-07-25 11:32) @lasted(24m38s)
+            // Actually split it up into 3 seperate components.
+            // A component for unique news item
+            // A component to loop each news item
+            // A component to display the end result
+            // Code is a wee bit more manageable
 
     
     News Item:
         ✔ Basic Structure in place @done(18-07-24 17:48)
-        ☐ Style page
+        ☐ Style page @started(18-07-25 11:08)
     
 
 Part 2 Implement Database functionality:

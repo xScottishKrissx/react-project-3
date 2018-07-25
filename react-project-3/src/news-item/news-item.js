@@ -10,7 +10,7 @@ class NewsItem extends React.Component{
 
     render(){
         const pageText = this.props.location.state.pageText;        
-        const pageTitle = this.props.location.state.pageTitle;
+        // const pageTitle = this.props.location.state.pageTitle;
         const pageAuthor = this.props.location.state.pageAuthor;
         const pageLikes = this.props.location.state.pageLikes;
         const pageDislikes = this.props.location.state.pageDislikes;
