@@ -20,6 +20,7 @@ export class Home extends React.Component{
                 <h1>Home</h1>
                 <div className="news-item-wrapper">
                     <NewsItemLoop />
+                    
                 </div>
             </div>
         )

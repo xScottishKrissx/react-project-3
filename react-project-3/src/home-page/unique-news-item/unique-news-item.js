@@ -25,7 +25,7 @@ export const UniqueNewsItem = (props) => {
                         <Link 
                             className="news-item-link"
                             to={{
-                                pathname: '/news-item',
+                                pathname: '/news-item/' + arraymap.id,
                                 state: {
                                     pageId: arraymap.id,
                                     pageTitle: arraymap.title,

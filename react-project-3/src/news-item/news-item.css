@@ -1,0 +1,40 @@
+.news-page-wrapper{
+    border: 1px solid;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+    .news-page-header-image{
+        height: 300px;
+    }
+
+    .news-page-article{
+        /* background-color: red; */
+    }
+
+    .news-page-article h1,
+    .news-page-article h2,
+    .news-page-article h3{
+        text-align: center;
+    }
+
+    .article-title{
+        
+    }
+
+    .author{
+
+    }
+
+    .article-text{
+        padding: 5px;
+    }
+
+    .likes{
+        padding: 5px;
+    }
+
+    .dislikes{
+        padding: 5px;
+    }
