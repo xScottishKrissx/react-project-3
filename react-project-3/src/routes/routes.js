@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Route, Redirect, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 
 import Home from '../home-page/home.js';
 import NewsItem from '../news-item/news-item.js'
@@ -26,8 +26,9 @@ export class Routes extends React.Component{
 
                 {/* <Route  path="/home" component={Home}/> */}
                 {/* <Route  path={"/news-item" + {TestLoop} } component={NewsItem}/> */}
-                <Route path="/news-item" component={NewsItem}/>
-
+                
+                <Route path="/news-item/:id" component={NewsItem}/>
+                
             </div>
         )
     }

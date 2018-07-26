@@ -6,10 +6,16 @@ import DummyData from '../dummy-data';
 export const UniqueNewsItem = (props) => {
     const dummyNews = DummyData;
     const a = [];
+
+    // This is the thing causing the problem I think.
+    // If I could make this equal to value of something within the map below I
+    // might have my solution for programatic unique shareable urls.
     const s = dummyNews[props.id];
     a.push(s);
 
     const news = a.map(arraymap => {
+
+
         const imgUrl = "https://unsplash.it/500/200?random=" + arraymap.id;
         const style = {
             backgroundImage: 'url(' + imgUrl + ')',
@@ -26,6 +32,7 @@ export const UniqueNewsItem = (props) => {
                             className="news-item-link"
                             to={{
                                 pathname: '/news-item/' + arraymap.id,
+                                // pathname: '/news-item/:id',
                                 state: {
                                     pageId: arraymap.id,
                                     pageTitle: arraymap.title,

@@ -1,0 +1,4 @@
+26 July 2018 - What I Did today:
+        ✔ Figured out how to add a new line to JSON data.
+        ✔ Made some progress with Unique IDs but hit some roadblocks. I feel like I am so close to a breakthrough
+        ✔ I managed to get unique shareable urls working. You can manually navigation to any page provided the id of the page exists in the database. There is still a lot of work to be done here as I have detailed in the todo file. Basically I think I need to completley overhaul the way I am retrieving the data and displaying it on page.

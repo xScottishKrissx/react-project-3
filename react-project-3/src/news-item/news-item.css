@@ -29,6 +29,7 @@
 
     .article-text{
         padding: 5px;
+        white-space: pre-wrap;
     }
 
     .likes{

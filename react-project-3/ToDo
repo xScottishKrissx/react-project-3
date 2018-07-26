@@ -26,6 +26,7 @@ Part 1 - Implement the front end UI:
             ☐ 1200px
             ☐ 1500px
             ☐ 1920px
+        ☐ I really need to be better at branching with Github when starting something.
         
         ☐ If you click on a News Item at Home you should get a unique shareable URL
             ✔ Right now you get a path simply ends with /news-item @done(18-07-25 17:09)
@@ -33,8 +34,23 @@ Part 1 - Implement the front end UI:
                // ☐ I solved a part of this by adding arraymap.id to the path
                 // ☐ However the link is still not shareable at this point
                 // ☐ I think this now has something to do with the onClick event because the data is loaded from an external file on click. If there's no click then there is not data loaded to state which returns an error.
-            
-        
+            ✔ Work out how to get by the onClick to load. @done(18-07-26 15:39)
+                // So I think I have an idea
+                // I use parameters to move the id from the home to the news item and then run the .map again to retrieve the rest of the data.
+                // Right now I am getting all of the data when the page loads. 
+                // My idea is to only get the article id,title and image
+                // Using that when you click on an item you go the article with the rest of the content ready.
+                // Well that didn't work and now I am a bit stumped.
+                // I am going to go back to basics and create a map that returns the dummy data when the page is rendered to a hard-coded ID
+            ✔ Created Unique pages with shareable URLS @done(18-07-26 15:36)
+                //  The main problem with my approach is that the ID needs to match up with the array. The array goes from 0 to 9 so if there isnt an entry with an id of 0 then you get an error. This would be a problem when the design starts to scale and you start adding and removing things from the database. 
+                // Its also dependant on the for loop so its not at all flexible but I am not sure how else to approach something like this at the moment
+                // I think I need to do this in reverse. Use the id from the json data to set the URL param and display the news items and their content based on the id from url.
+                // I'm still a bit unsure how to proceed but an interesting and good challenge.
+
+                // Ok so maybe if I rework my loop I can make this more dynamic and flexible. THe entire rigidity of the design comes from the loop setting a value of i for the ID that increments every it loops. If I can somehow rework the entire thing maybe I could have i correspond in someway to the values within the json data. How the hell i do that I don't know but I can give it a crack 
+
+                // I am going to call it a day I think as I am in a bit of haze from starting at the same pieces of code for hours. I do think i'm not that for from a solution though, I just need to look the way I am looping through the external data. The issue is definitley there...probably.
 
     Header:
         ✔ Get basic structure in place @done(18-07-24 17:48)
@@ -42,8 +58,10 @@ Part 1 - Implement the front end UI:
             ☐ See Above @started(18-07-25 11:08)
             // The basic layout is in place but more work is needed especially with spacing
                 ☐  Try and get everything onto one line
+                ☐ Sign in button needs fixed which could mean an overhaul of the whole thing.
         ☐ Desktop Nav @started(18-07-25 11:08)
             
+        
 
     Home Page:
         ✔ Basic skeleton in place @done(18-07-24 17:48)
@@ -66,7 +84,10 @@ Part 1 - Implement the front end UI:
             ☐   Main Header Below
             ☐    Sub-Title Next
             ☐      Content 
-        ☐ Figure out how to add a new line to json data
+        ✔ Figure out how to add a new line to json data @done(18-07-26 11:08)
+            // It's a 2 part thing
+                // First \n in json
+                // Second .where-the-data-is { white-space: pre-wrap;}
 
     Footer:
         // Dont' know if I am going to have one.
@@ -78,3 +99,5 @@ Part 2 Implement Database functionality:
     ☐ No need to rush this, take your time and work through each challenge one by one.
     ☐ This is possible but you might need to go off and some tuturials / research to 
     
+
+
