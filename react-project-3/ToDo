@@ -52,6 +52,11 @@ Part 1 - Implement the front end UI:
 
                 // I am going to call it a day I think as I am in a bit of haze from starting at the same pieces of code for hours. I do think i'm not that for from a solution though, I just need to look the way I am looping through the external data. The issue is definitley there...probably.
 
+                // I made some branches and tried some things but I didnt get very far. The good news is that I have successfully created unique shareable pages that can be manually typed in. The bad news is that the design only works if the length of the loop equal the amount of ids in the data file. For example if you have items in the file you get an error. I suppose for a large site this would hardly be a problem but it doesn't feel right.
+
+                // I have given it a long time and a really good shot but I just don't know how to fix this. It's not a big deal and doesn't actually affect this project but it's something I need to pick up for the future. Maybe next project will be built around this.
+
+                // I am going to spend this final day on this and see if I can do anything. If I can't then tommorow I will move on because this has already taken up too much time and it's not even a roadblock for this project.
     Header:
         ✔ Get basic structure in place @done(18-07-24 17:48)
         ☐ Mobile Nav @started(18-07-25 11:08)
