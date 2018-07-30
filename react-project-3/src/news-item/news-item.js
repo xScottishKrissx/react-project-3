@@ -36,7 +36,7 @@ import DummyData from '../home-page/dummy-data.js';
 // }
 
 
-class NewsItem extends React.Component{
+class NewsItem1 extends React.Component{
 
 
     
@@ -44,28 +44,56 @@ class NewsItem extends React.Component{
     render(){
 
         const dummyNews = DummyData;
-        const a = [];
+        // const a = [];
     
         
-        // If I can get this value to be equal to the params I might have it.
-        const thing = this.props.match.params.id;  
+        // This right here is the problem.
+        // If i solve this then I have it.
+         const value = this.props.match.params.id;  
+        // console.log(this.props.match.params.id);
         
-        
-        const s = dummyNews[thing];
-        a.push(s);
+        // // console.log(dummyNews[thing])
+        // const s = dummyNews[value];
+        // console.log(s);
+        // a.push(s);
+        // console.log(a);
     
         //console.log('match', match)
-        //console.log("Hello" + this.match.params.id);
+        // console.log("Hello" + this.props.match.params.id);
     
-        const news = a.map(arraymap => {
-            return (
-                <div id={arraymap.id} key={arraymap.id}>  
-                    <p>{arraymap.id}</p>    
-                    <p>{arraymap.title}</p>                        
-                    
-                </div>
-            )
-        })
+        // const news = a.map((value, key) => {
+        //     console.log("ID is = " + this.props.match.params.id)
+        //     return (
+        //         // <p>News Item.js</p>
+                
+        //         <div id={value.id} >  
+        //             <p>{value.id}</p>    
+        //             <p>{value.title}</p>                      
+        //         </div>
+        //     )
+        // })
+
+        console.log(value)
+        const found = dummyNews.find(function(element) {
+            console.log(element.id)
+            if(element.id === 123){
+                // return element.id === value;
+                console.log(true);
+            }else{
+                console.log(false);
+            }
+            
+        });
+        console.log(found)
+
+        function isId(id){
+            return id.id === this.props.match.params.id;
+        }
+        console.log(dummyNews.find(isId));
+        const myThing =  dummyNews.find(isId);
+        // console.log(found.id)
+
+
 
         // const pageText = this.props.location.state.pageText;        
         // const pageTitle = this.props.location.state.pageTitle;
@@ -74,12 +102,16 @@ class NewsItem extends React.Component{
         // const pageDislikes = this.props.location.state.pageDislikes;
         // const style = this.props.location.state.pageImage;
         // const pageId = this.props.location.state.pageId;
-        console.log("Hello" + this.props.match.params.id);
+        // console.log("Hello" + this.match.params.id);
         return(
             <div className='news-page-wrapper' >
             {/* <Test /> */}
             <p><Link to='/home'> ...back </Link></p>
-            {news}
+            {/* {news} */}
+            {found}
+            {found}
+            <p>{myThing.id}</p>
+            <p>{myThing.title}</p>
             {/* <p>Page ID: {pageId}</p>
 
                 <div className="news-page-header-image" style={style}></div>
@@ -104,5 +136,13 @@ class NewsItem extends React.Component{
         )
     }
 }
+// This is a bit of a copy and paste job but I understand what's going on what i've been doing wrong.
+export const NewsItem = ({match}) =>(
+    <div className=''>
+    <p><Link to='/home'> ...back </Link></p>
+        <p>{match.params.id}</p>
+    </div>
+);
+
 
 export default NewsItem;

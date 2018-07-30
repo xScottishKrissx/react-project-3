@@ -44,19 +44,24 @@ Part 1 - Implement the front end UI:
                 // I am going to go back to basics and create a map that returns the dummy data when the page is rendered to a hard-coded ID
             ✔ Created Unique pages with shareable URLS @done(18-07-26 15:36)
                 //  The main problem with my approach is that the ID needs to match up with the array. The array goes from 0 to 9 so if there isnt an entry with an id of 0 then you get an error. This would be a problem when the design starts to scale and you start adding and removing things from the database. 
+                
                 // Its also dependant on the for loop so its not at all flexible but I am not sure how else to approach something like this at the moment
+                
                 // I think I need to do this in reverse. Use the id from the json data to set the URL param and display the news items and their content based on the id from url.
+
                 // I'm still a bit unsure how to proceed but an interesting and good challenge.
 
                 // Ok so maybe if I rework my loop I can make this more dynamic and flexible. THe entire rigidity of the design comes from the loop setting a value of i for the ID that increments every it loops. If I can somehow rework the entire thing maybe I could have i correspond in someway to the values within the json data. How the hell i do that I don't know but I can give it a crack 
 
                 // I am going to call it a day I think as I am in a bit of haze from starting at the same pieces of code for hours. I do think i'm not that for from a solution though, I just need to look the way I am looping through the external data. The issue is definitley there...probably.
 
-                // I made some branches and tried some things but I didnt get very far. The good news is that I have successfully created unique shareable pages that can be manually typed in. The bad news is that the design only works if the length of the loop equal the amount of ids in the data file. For example if you have items in the file you get an error. I suppose for a large site this would hardly be a problem but it doesn't feel right.
+                // I made some branches and tried some things but I didnt get very far. The good news is that I have successfully created unique shareable pages that can be manually typed in. The bad news is that the design only works if the id's in the database go from 0 to whatever. If you have an id like 342 then it won't work. I feel like the solution is right in front of me but I just can't get it. Very frustrating. 
 
                 // I have given it a long time and a really good shot but I just don't know how to fix this. It's not a big deal and doesn't actually affect this project but it's something I need to pick up for the future. Maybe next project will be built around this.
 
                 // I am going to spend this final day on this and see if I can do anything. If I can't then tommorow I will move on because this has already taken up too much time and it's not even a roadblock for this project.
+
+                // I might have got somewhere by ripping up the entire system and starting again with a new map instead of using a for loop. Now the system loops through the objects within the file and returns those objects. Specifically i now have the database id and array id as seperatw values to work with. I'm not in the clear yet but I am in a better position than i was at the least.
     Header:
         ✔ Get basic structure in place @done(18-07-24 17:48)
         ☐ Mobile Nav @started(18-07-25 11:08)

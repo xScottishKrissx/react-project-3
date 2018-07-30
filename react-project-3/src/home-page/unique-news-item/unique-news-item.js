@@ -10,15 +10,18 @@ export const UniqueNewsItem = (props) => {
     // This is the thing causing the problem I think.
     // If I could make this equal to value of something within the map below I
     // might have my solution for programatic unique shareable urls.
+    
     const s = dummyNews[props.id];
+    console.log("Props ID = " + props.id)
     a.push(s);
 
-    const news = a.map(arraymap => {
+    // const news = a.map((value, key) => {
+    const news = dummyNews.map((value, key) => {
 
 
-        const imgUrl = "https://unsplash.it/500/200?random=" + arraymap.id;
+        const imgUrl = "https://unsplash.it/500/200?random=" + value.id;
         const style = {
-            backgroundImage: 'url(' + imgUrl + ')',
+            //backgroundImage: 'url(' + imgUrl + ')',
             backgroundPosition: "bottom",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -26,28 +29,29 @@ export const UniqueNewsItem = (props) => {
         }
 
         return (
-            <div className="" style={style} id={arraymap.id} key={arraymap.id}>               
+            <div className="news-item" style={style} id={value.id} key={key}>               
 
                         <Link 
                             className="news-item-link"
+                            
                             to={{
-                                pathname: '/news-item/' + arraymap.id,
+                                pathname: '/news-item/' + value.id,
                                 // pathname: '/news-item/:id',
                                 state: {
-                                    pageId: arraymap.id,
-                                    pageTitle: arraymap.title,
-                                    pageText: arraymap.text,
-                                    pageAuthor: arraymap.author,
-                                    pageLikes: arraymap.likes,
-                                    pageDislikes: arraymap.dislikes,
-                                    postDate: arraymap.postdate,
+                                    pageId: value.id,
+                                    pageTitle: value.title,
+                                    pageText: value.text,
+                                    pageAuthor: value.author,
+                                    pageLikes: value.likes,
+                                    pageDislikes: value.dislikes,
+                                    postDate: value.postdate,
                                     pageImage: style
 
                                 }
                             }}>
                             
                         <div className="">
-                            <span>{arraymap.title}</span>
+                            <span>{value.title}</span>
                         </div> 
 
                         </Link>
@@ -57,7 +61,7 @@ export const UniqueNewsItem = (props) => {
         )
     })
     return (
-            <div className="news-item">
+            <div className="">
                  {news}
             </div>
     );
