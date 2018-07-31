@@ -3,7 +3,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 
 import Home from '../home-page/home.js';
-import NewsItem from '../news-item/news-item.js'
+import NewsPage from '../news-page/news-page.js'
 
 //  const TestLoop = (title) => {
 //     let i;
@@ -18,7 +18,7 @@ import NewsItem from '../news-item/news-item.js'
 export class Routes extends React.Component{
     render(){
         return (
-            <div>
+            <div className="body-wrapper">
                 <Switch>            
                     <Redirect from="/home" to="/" /> 
                     <Route exact path="/" component={Home} /> 
@@ -27,7 +27,7 @@ export class Routes extends React.Component{
                 {/* <Route  path="/home" component={Home}/> */}
                 {/* <Route  path={"/news-item" + {TestLoop} } component={NewsItem}/> */}
                 
-                <Route path="/news-item/:id" component={NewsItem}/>
+                <Route path="/news-page/:id" component={NewsPage}/>
                 
             </div>
         )

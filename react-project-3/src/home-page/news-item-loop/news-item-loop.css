@@ -1,0 +1,9 @@
+.news-square{
+    display: flex;
+    width: 300px;
+
+}
+
+.news-item-link{
+    width: 100%;
+}

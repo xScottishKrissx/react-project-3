@@ -1,10 +1,10 @@
 
 
 .news-item-wrapper{
-    /* border: 1px solid black; */
-    /* display: flex;
+    border: 1px solid black;
+    display: flex;
     flex-wrap: wrap;
-    height: 200px;
+    /* height: 200px;
     width: 100%; */
 }
 

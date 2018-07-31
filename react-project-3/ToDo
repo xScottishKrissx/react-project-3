@@ -9,6 +9,8 @@ Part 1 - Implement the front end UI:
 
     Known Bugs:
         ☐ If you middle click or try to open a news item in a new tab, you can an error @started(18-07-25 11:58)
+        ☐ Typing in localhost:3000/newsitem will return a blank screen
+        ✔ The random image function returns the same image. Not a big deal but should be fixed before the end. @done(18-07-31 17:41)
     
     General Notes / Objectives:
         ✔ Get routes up and running once basic structure is in place. @done(18-07-24 17:47)
@@ -28,7 +30,7 @@ Part 1 - Implement the front end UI:
             ☐ 1920px
         ☐ I really need to be better at branching with Github when starting something.
         
-        ☐ If you click on a News Item at Home you should get a unique shareable URL
+        ✔ If you click on a News Item at Home you should get a unique shareable URL @done(18-07-31 17:19)
             ✔ Right now you get a path simply ends with /news-item @done(18-07-25 17:09)
             //☐ I think this is possible but I will need to go more in deapth with Routes
                // ☐ I solved a part of this by adding arraymap.id to the path
@@ -62,6 +64,8 @@ Part 1 - Implement the front end UI:
                 // I am going to spend this final day on this and see if I can do anything. If I can't then tommorow I will move on because this has already taken up too much time and it's not even a roadblock for this project.
 
                 // I might have got somewhere by ripping up the entire system and starting again with a new map instead of using a for loop. Now the system loops through the objects within the file and returns those objects. Specifically i now have the database id and array id as seperatw values to work with. I'm not in the clear yet but I am in a better position than i was at the least.
+
+                // I have managed to solve this but explaining it is a bit tricky because i'm not sure how to actually start. Basically i used match.params.id to get the identifier along with js .find and map functions. I will try and go into more detail later.
     Header:
         ✔ Get basic structure in place @done(18-07-24 17:48)
         ☐ Mobile Nav @started(18-07-25 11:08)
