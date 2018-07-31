@@ -55,6 +55,19 @@ const NewMap = () => {
                 // <UniqueNewsItem id={value.id} key={key} /> 
                 <div className='test-1'>
                     <p>{value.id}</p>
+                    <Link 
+                className="news-item-link"
+                
+                to={{
+                    pathname: '/news-item/' + value.id,
+                    // pathname: '/news-item/:id',
+                }}>
+                
+            <div className="">
+                <span>{value.title}</span>
+            </div> 
+
+            </Link>
                 </div>
         );
   })

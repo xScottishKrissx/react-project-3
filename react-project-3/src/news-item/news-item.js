@@ -35,7 +35,7 @@ import DummyData from '../home-page/dummy-data.js';
 //     )
 // }
 
-
+const dummyNews = DummyData;
 class NewsItem1 extends React.Component{
 
 
@@ -43,7 +43,7 @@ class NewsItem1 extends React.Component{
 
     render(){
 
-        const dummyNews = DummyData;
+       
         // const a = [];
     
         
@@ -136,13 +136,40 @@ class NewsItem1 extends React.Component{
         )
     }
 }
+
+
 // This is a bit of a copy and paste job but I understand what's going on what i've been doing wrong.
-export const NewsItem = ({match}) =>(
+export const NewsItem = ({match}) =>{
+    const identifier = match.params.id;  
+    console.log(identifier);
+
+    const found = dummyNews.find(function(element) {
+        if(element.id == identifier){
+            // return element.id === value;
+            console.log(true);
+        }else{
+            console.log(false);
+        }
+        
+    });
+    console.log(found)
+
+    function isId(id){
+        return id.id == identifier;
+    }
+    console.log(dummyNews.find(isId));
+    const myThing =  dummyNews.find(isId);
+
+
+ return(   
     <div className=''>
     <p><Link to='/home'> ...back </Link></p>
         <p>{match.params.id}</p>
+        <p>{myThing.id}</p>
+        
+        <p>{myThing.title}</p>
     </div>
-);
+)};
 
 
 export default NewsItem;
