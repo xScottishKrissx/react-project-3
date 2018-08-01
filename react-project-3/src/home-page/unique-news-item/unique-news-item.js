@@ -46,7 +46,6 @@ export const UniqueNewsItem = (props) => {
                                     pageDislikes: value.dislikes,
                                     postDate: value.postdate,
                                     pageImage: style
-
                                 }
                             }}>
                             

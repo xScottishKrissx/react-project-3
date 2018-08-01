@@ -13,9 +13,9 @@
         /* background-color: red; */
     }
 
-    .news-page-article h1,
-    .news-page-article h2,
-    .news-page-article h3{
+    section h1,
+    section h2,
+    section h3{
         text-align: center;
     }
 
@@ -23,19 +23,23 @@
         
     }
 
-    .author{
+    .article-author{
 
     }
 
     .article-text{
         padding: 5px;
+        line-height: 1.5rem;
+        /* max-width: 600px; */
+        max-width: 35rem;
+        margin: 0 auto;
         white-space: pre-wrap;
     }
 
-    .likes{
+    .article-likes{
         padding: 5px;
     }
 
-    .dislikes{
+    .article-dislikes{
         padding: 5px;
     }

@@ -41,12 +41,19 @@ export const NewsPage = ({match}) =>{
  return(   
     <div className='news-page-wrapper'>
     
-    <p><Link to='/home'>...back</Link></p>
+        <p><Link to='/home'>...back</Link></p>
+        
         <div style={style}></div>
-        <div>
-            <p>{articleID}</p>
-            <p>{articleObject.id}</p> 
-            <p>{articleObject.title}</p>
+        
+        <div>            
+            <section>
+                <h1 className="article-title">{articleObject.title}</h1>
+                <h2 className="article-subtitle">Subtitle</h2>
+                <h3 className="article-author">{articleObject.author}</h3>
+                <p className="article-text">{articleObject.text}</p>
+                <p className="article-likes">Likes: {articleObject.likes} </p>
+                <p className="article-dislikes">Dislikes: {articleObject.dislikes}</p>
+            </section>
         </div>
     </div>
 )};

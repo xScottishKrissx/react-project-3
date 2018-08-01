@@ -1,34 +1,34 @@
 Part 1 - Implement the front end UI:
-    ☐ Build from a mobile first approach
-        ☐ Design should be responsive
-    ☐ Focus on the non-logged functionality
-    ☐ Add Logged in functionality as a secondary feature
-    ☐ Most important is the ability to click on a link, go to a new page and then back again
-    ☐ With that core in place then add the CMS elements.
+ /   ☐ Build from a mobile first approach
+ /       ☐ Design should be responsive
+ /   ☐ Focus on the non-logged functionality
+ /   ☐ Add Logged in functionality as a secondary feature
+ /   ☐ Most important is the ability to click on a link, go to a new page and then back again
+ /   ☐ With that core in place then add the CMS elements.
 
 
     Known Bugs:
-        ☐ If you middle click or try to open a news item in a new tab, you can an error @started(18-07-25 11:58)
+        ✔ If you middle click or try to open a news item in a new tab, you can an error @started(18-07-25 11:58) @done(18-08-01 11:03) @lasted(6d23h5m12s)
         ☐ Typing in localhost:3000/newsitem will return a blank screen
         ✔ The random image function returns the same image. Not a big deal but should be fixed before the end. @done(18-07-31 17:41)
-    
+        ☐ Any ID that doesn't exists should return an error page. @started(18-08-01 11:47)
     General Notes / Objectives:
         ✔ Get routes up and running once basic structure is in place. @done(18-07-24 17:47)
         ☐ Mobile Menu should be controlled by swipe gesture or button located at bottom of page
-            ☐ This is a good idea but I'm not sure where to even start with this.
-            ☐ Could just use a basic menu for this project and integrate gestures in the next
-        ☐ Media Queries
-            ☐ 360px
-                ☐ Extreme case scenario but good practice anyway
-            ☐ 768px
-                ☐ Mobile Nav Cutoff
-                ☐ Probably the most adjustments at this point
-                ☐ Limit width to 90%, create a margin at the sides
-                ☐ Change header to have nav left and brand right
-            ☐ 1200px
-            ☐ 1500px
-            ☐ 1920px
-        ☐ I really need to be better at branching with Github when starting something.
+       /     ☐ This is a good idea but I'm not sure where to even start with this.
+       /     ☐ Could just use a basic menu for this project and integrate gestures in the next
+       / ☐ Media Queries
+          /  ☐ 360px
+          /      ☐ Extreme case scenario but good practice anyway
+          /  ☐ 768px
+          /      ☐ Mobile Nav Cutoff
+          /      ☐ Probably the most adjustments at this point
+          /      ☐ Limit width to 90%, create a margin at the sides
+          /      ☐ Change header to have nav left and brand right
+          / ☐ 1200px
+          / ☐ 1500px
+          / ☐ 1920px
+        //☐ I really need to be better at branching with Github when starting something.
         
         ✔ If you click on a News Item at Home you should get a unique shareable URL @done(18-07-31 17:19)
             ✔ Right now you get a path simply ends with /news-item @done(18-07-25 17:09)
@@ -68,33 +68,33 @@ Part 1 - Implement the front end UI:
                 // I have managed to solve this but explaining it is a bit tricky because i'm not sure how to actually start. Basically i used match.params.id to get the identifier along with js .find and map functions. I will try and go into more detail later.
     Header:
         ✔ Get basic structure in place @done(18-07-24 17:48)
-        ☐ Mobile Nav @started(18-07-25 11:08)
-            ☐ See Above @started(18-07-25 11:08)
+       / ☐ Mobile Nav @started(18-07-25 11:08)
+       /      ☐ See Above @started(18-07-25 11:08)
             // The basic layout is in place but more work is needed especially with spacing
-                ☐  Try and get everything onto one line
-                ☐ Sign in button needs fixed which could mean an overhaul of the whole thing.
-        ☐ Desktop Nav @started(18-07-25 11:08)
+       /         ☐  Try and get everything onto one line
+       /         ☐ Sign in button needs fixed which could mean an overhaul of the whole thing.
+        /☐ Desktop Nav @started(18-07-25 11:08)
             
         
 
     Home Page:
         ✔ Basic skeleton in place @done(18-07-24 17:48)
         ✔ Used some code from React-Project-2 to get news items displayed on the page @started(18-07-25 11:08) @done(18-07-25 15:13) @lasted(4h5m59s)
-            ☐ Next stage is formatting @started(18-07-25 11:08)
+           / ☐ Next stage is formatting @started(18-07-25 11:08)
         ✔ Seperate News Item Look into its own component @started(18-07-25 11:08) @done(18-07-25 11:32) @lasted(24m38s)
             // Actually split it up into 3 seperate components.
             // A component for unique news item
             // A component to loop each news item
             // A component to display the end result
             // Code is a wee bit more manageable
-        ☐ News Items
+        News Items:
             ☐ Create Hover/Click caption @started(18-07-25 15:13)
 
     
     News Item:
-        ✔ Basic Structure in place @done(18-07-24 17:48)
-        ☐ Style page @started(18-07-25 11:08)
-            ☐ Large Header Image at top
+        ☐ Basic Structure in place
+        Style page: 
+            ✔ Large Header Image at top @done(18-08-01 11:50)
             ☐   Main Header Below
             ☐    Sub-Title Next
             ☐      Content 
@@ -109,9 +109,10 @@ Part 1 - Implement the front end UI:
     
 
 Part 2 Implement Database functionality:
-    ☐ Focus on getting a simple form to submit to the database with basic info
-    ☐ No need to rush this, take your time and work through each challenge one by one.
-    ☐ This is possible but you might need to go off and some tuturials / research to 
+    ☐ Get information from database.
+    ☐ Create a simple form to submit to the database with basic info
+        No need to rush this, take your time and work through each challenge one by one.
+        This is possible but you might need to go off and some tuturials / research to 
     
 
 
