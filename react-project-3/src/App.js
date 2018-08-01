@@ -5,8 +5,8 @@ import Header from './header/header.js';
 import { Routes } from './routes/routes';
 
 
-import {Route, Link, Redirect, Switch} from 'react-router-dom';
-import {BrowserRouter as Router} from 'react-router-dom';
+// import {Route, Link, Redirect, Switch} from 'react-router-dom';
+// import {BrowserRouter as Router} from 'react-router-dom';
 
 
 // All of this stuff was used for practice with routes.

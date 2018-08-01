@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import GalleryData from '../dummy-data';
-import UniqueNewsItem from '../unique-news-item/unique-news-item';
+// import UniqueNewsItem from '../unique-news-item/unique-news-item';
 
-import FetchRandomImage from '../../news-page/news-page'
+// import FetchRandomImage from '../../news-page/news-page'
 
 import '../news-item-loop/news-item-loop.css';
 

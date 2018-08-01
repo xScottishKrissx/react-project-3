@@ -1,4 +1,7 @@
 1 August 2018
+        Added the react-responsive library so I should be able to more easily design for responsive.
+        Improved News Page for resolutions up to and including 4K
+        Improved News Page for larger resolutions by adding images and reducing article width
         Improved the home page flex
         Improved appearance of news page
 

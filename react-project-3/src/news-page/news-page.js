@@ -1,11 +1,13 @@
 import React from 'react';
 import './news-item.css';
-
+import MediaQuery from 'react-responsive';
 import {Link} from 'react-router-dom';
 
 import DummyData from '../home-page/dummy-data.js';
 
 const dummyNews = DummyData;
+
+
 
 // This is a bit of a copy and paste job but I understand what's going on what i've been doing wrong.
 export const NewsPage = ({match}) =>{
@@ -18,7 +20,7 @@ export const NewsPage = ({match}) =>{
 
     function findId(id){
         // Will need to do some string to int conversion here
-        return id.id == articleID;
+        return id.id === Number(articleID);
     }
 
     // console.log(dummyNews.find(findId));
@@ -37,27 +39,70 @@ export const NewsPage = ({match}) =>{
         width:"100%"
     }
 
+    const changeFontSize = {
+        fontSize:"25rem",
+    }
 
- return(   
+console.log(ExtraImageLoop)
+ return(    
+     
     <div className='news-page-wrapper'>
     
         <p><Link to='/home'>...back</Link></p>
+
         
         <div style={style}></div>
-        
-        <div>            
-            <section>
+
+        <div className="news-article-header">
                 <h1 className="article-title">{articleObject.title}</h1>
                 <h2 className="article-subtitle">Subtitle</h2>
                 <h3 className="article-author">{articleObject.author}</h3>
+        </div>
+
+
+        <div className="news-article-body"> 
+        
+        <MediaQuery query="(max-device-width:1600px)">
+        <section>
+                <p className="article-text">{articleObject.text}</p>
+                <p className="article-likes">Likes: {articleObject.likes} </p>
+                <p className="article-dislikes">Dislikes: {articleObject.dislikes}</p>
+        </section>
+
+            <div className="extra-images">
+                <ExtraImageLoop />             
+            </div>
+    
+        </MediaQuery>   
+
+        <MediaQuery query="(min-device-width:1600px)">
+        <section>
                 <p className="article-text">{articleObject.text}</p>
                 <p className="article-likes">Likes: {articleObject.likes} </p>
                 <p className="article-dislikes">Dislikes: {articleObject.dislikes}</p>
             </section>
+
+            <div className="extra-images">
+                <ExtraImageLoop />             
+            </div>
+    
+        </MediaQuery>              
+
         </div>
     </div>
 )};
 
+
+
+
+ const ExtraImageLoop = (title) => {
+    let i;
+    let imagesArray = [];
+    for(i = 0; i < 3; i++){        
+        imagesArray.push(<img key={i} src={"https://unsplash.it/500/200?random=" + (i * 12 ) } alt="the-knews-extra-images" />)
+    }
+    return imagesArray;
+}
 
 
 export default NewsPage;

@@ -2,13 +2,17 @@
     border: 1px solid;
     width: 90%;
     margin: 0 auto;
+    max-width: 1920px;
 
 }
 
     .news-page-header-image{
         height: 300px;
     }
-
+    .news-article-header{
+        /* border:1px solid red; */
+        text-align: center;
+    }
     .news-page-article{
         /* background-color: red; */
     }
@@ -42,4 +46,27 @@
 
     .article-dislikes{
         padding: 5px;
+    }
+
+    .extra-images, .extra-text{
+        display: none;
+    }
+
+
+@media (min-width: 1600px) {
+        .news-article-body{
+            display: flex;
+        }
+        .extra-images{
+            display: block;
+            flex:1;
+        }
+            .extra-images img{
+                width: 100%;
+            }
+        section{
+            /* background-color: grey; */
+            /* border: 1px solid red; */
+            width: 50%;
+        }
     }
