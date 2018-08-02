@@ -33,21 +33,53 @@ const NewMap = () => {
         }
 
 
+
         return (
                 <div className='news-square' key={key}>                    
-                    <Link className="news-item-link" to={{pathname: '/news-page/' + value.id}}>    
-
-                        <div style={style}>
-                            <span>{value.title}</span>
-                            
-                        </div> 
-
-                    </Link>
+                        <Caption pageid={value.id} style={style} title={value.title} />
                 </div>
         );
   })
     return myEffingMap;    
 }
 
+class Caption extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.showExcerpt = this.showExcerpt.bind(this);
+    }
+
+    showExcerpt(e){
+        e.preventDefault();
+        console.log("ShowExcerpt");
+        const thing = document.getElementsByClassName("news-item-link");
+        console.log(this.props.pageid);
+        console.log(thing);
+        console.log(thing[e.currentTarget])
+        
+    }
+    
+    render(){
+        const pageid = this.props.pageid;
+        const style = this.props.style;
+        const title = this.props.title
+
+        return (
+            <Link className="news-item-link" to={{pathname: '/news-page/' + pageid}}>    
+
+            <div style={style}>
+                
+                <div className="news-item-link-text" onClick={this.showExcerpt}>
+                    <span>{title}</span>
+                    <p>Excerpt from Article</p>
+                </div>
+                
+            </div> 
+
+        </Link>
+        );
+    }
+} 
 
 export default NewsItemLoop;

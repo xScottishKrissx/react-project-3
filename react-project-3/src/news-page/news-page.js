@@ -53,40 +53,23 @@ console.log(ExtraImageLoop)
         
         <div style={style}></div>
 
-        <div className="news-article-header">
+        <header className="news-article-header">
                 <h1 className="article-title">{articleObject.title}</h1>
                 <h2 className="article-subtitle">Subtitle</h2>
                 <h3 className="article-author">{articleObject.author}</h3>
-        </div>
+        </header>
 
 
-        <div className="news-article-body"> 
-        
-        <MediaQuery query="(max-device-width:1600px)">
-        <section>
-                <p className="article-text">{articleObject.text}</p>
-                <p className="article-likes">Likes: {articleObject.likes} </p>
-                <p className="article-dislikes">Dislikes: {articleObject.dislikes}</p>
-        </section>
+        <div className="news-article-body">
+            <article>
+                    <p className="article-text">{articleObject.text}</p>
+                    <p className="article-likes">Likes: {articleObject.likes} </p>
+                    <p className="article-dislikes">Dislikes: {articleObject.dislikes}</p>
+            </article>
 
             <div className="extra-images">
                 <ExtraImageLoop />             
-            </div>
-    
-        </MediaQuery>   
-
-        <MediaQuery query="(min-device-width:1600px)">
-        <section>
-                <p className="article-text">{articleObject.text}</p>
-                <p className="article-likes">Likes: {articleObject.likes} </p>
-                <p className="article-dislikes">Dislikes: {articleObject.dislikes}</p>
-            </section>
-
-            <div className="extra-images">
-                <ExtraImageLoop />             
-            </div>
-    
-        </MediaQuery>              
+            </div>  
 
         </div>
     </div>

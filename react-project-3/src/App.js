@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Header from './header/header.js';
+import Footer from './footer/footer.js'
 import { Routes } from './routes/routes';
 
 
@@ -42,6 +43,7 @@ class App extends Component {
 
       <Header />
       <Routes />
+      <Footer />
       </div>
     );
   }

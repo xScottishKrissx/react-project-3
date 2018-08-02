@@ -15,6 +15,8 @@ Part 1 - Implement the front end UI:
     General Notes  Objectives:
         Add some accessibility options:
             ☐ Button that changes font size in articles.
+        
+        ☐ I should consider replacing the random images with my own hosted images to help future proof the website
 
         ✔ Get routes up and running once basic structure is in place. @done(18-07-24 17:47)
         ☐ Mobile Menu should be controlled by swipe gesture or button located at bottom of page
@@ -77,6 +79,7 @@ Part 1 - Implement the front end UI:
                 ☐ Try and get everything onto one line
                 ☐ Sign in button needs fixed which could mean an overhaul of the whole thing.
         ☐ Desktop Nav @started(18-07-25 11:08)
+            ☐ The entire thing just needs reworked. The spirit of the thing is there but it looks terrible and its starting to annoy me to look at it.
             
         
 
@@ -91,7 +94,7 @@ Part 1 - Implement the front end UI:
              A component to display the end result
              Code is a wee bit more manageable
         News Items:
-            ☐ Create HoverClick caption @started(18-07-25 15:13)
+            ☐ Create Hover/Click caption @started(18-07-25 15:13)
 
     
     News Item:
@@ -107,6 +110,7 @@ Part 1 - Implement the front end UI:
                  Second .where-the-data-is { white-space: pre-wrap;}
         ✔ There's probably a bit too much white space at either side of the article. Maybe think about adding functionality for images. @done(18-08-01 13:57)
             ☐ The images are the same for each page. Make sure these are truly random @started(18-08-01 13:57)
+            ☐ Instead of removing the images at lower than 1600px just add them in a grid to the bottom of the article.
     Footer:
          Dont' know if I am going to have one.
          Might put a small bar at the bottom to act as footer.
